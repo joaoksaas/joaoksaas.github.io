@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR" class="dark" data-lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Pedro K. Sales | Links</title>
+    <link rel="icon" type="image/svg+xml" href="favicon-jp.svg" />
+    <!-- Alternativa: favicon-data-ai.svg -->
+
+    <meta property="og:title" content="João Pedro Kruchelski Sales" />
+    <meta
+      property="og:description"
+      content="Engenharia de Computação | Dados, IA & Desenvolvimento"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração customizada de cores e fontes no Tailwind -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              matte: {
+                bg: "#121314",
+                card: "#1b1d1f",
+                hover: "#232629",
+              },
+              paper: {
+                bg: "#f3ede2",
+                card: "#fbf8f1",
+                text: "#24221f",
+                sub: "#635e56",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body
+    class="min-h-screen flex justify-center px-5 py-8 transition-colors duration-300 bg-paper-bg text-paper-text dark:bg-matte-bg dark:text-[#eceeed]"
+  >
+    <div class="w-full max-w-[480px] flex flex-col gap-7">
+      <!-- Barra Superior: Idioma e Tema -->
+      <header class="flex justify-end gap-2.5">
+        <button
+          id="lang-toggle"
+          aria-label="Alternar idioma"
+          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-display text-xs font-semibold border transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card border-black/10 hover:border-sky-600 dark:bg-matte-card dark:border-white/10 dark:hover:border-sky-400"
+        >
+          <i data-lucide="globe" class="w-4 h-4"></i>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <button
+          id="theme-toggle"
+          aria-label="Alternar tema"
+          class="inline-flex items-center justify-center p-2 rounded-full border transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card border-black/10 hover:border-amber-600 dark:bg-matte-card dark:border-white/10 dark:hover:border-amber-400"
+        >
+          <i data-lucide="sun" class="w-4 h-4"></i>
+        </button>
+      </header>
+
+      <!-- Perfil -->
+      <section class="flex flex-col items-center text-center gap-2">
+        <div class="relative mb-1.5">
+          <img
+            src="avatar.jpg"
+            alt="João Pedro Kruchelski Sales"
+            onerror="this.src = 'https://github.com/joaoksaas.png'"
+            class="w-28 h-28 rounded-full object-cover border-4 border-paper-card dark:border-matte-card ring-2 ring-emerald-700 dark:ring-emerald-400 shadow-md"
+          />
+          <span
+            title="Disponível para oportunidades"
+            class="absolute bottom-1.5 right-1.5 w-4 h-4 rounded-full bg-emerald-600 dark:bg-emerald-400 border-2 border-paper-bg dark:border-matte-bg"
+          ></span>
+        </div>
+
+        <h1 class="font-display text-2xl font-bold tracking-tight">
+          João Pedro Kruchelski Sales
+        </h1>
+
+        <p
+          class="text-sm font-semibold text-sky-700 dark:text-sky-400"
+          data-pt="Engenharia de Computação • Dados & IA"
+          data-en="Computer Engineering • Data & AI"
+        >
+          Engenharia de Computação • Dados & IA
+        </p>
+
+        <p
+          class="text-sm text-paper-sub dark:text-[#9aa0a6] max-w-[390px] mt-0.5"
+          data-pt="Construindo soluções em Análise de Dados, Machine Learning e Agentes de IA."
+          data-en="Building solutions in Data Analysis, Machine Learning, and AI Agents."
+        >
+          Construindo soluções em Análise de Dados, Machine Learning e Agentes
+          de IA.
+        </p>
+      </section>
+
+      <!-- Lista de Links -->
+      <main class="flex flex-col gap-3.5">
+        <!-- Card Destaque (Verde) -->
+        <a
+          href="https://saas-lm.streamlit.app"
+          target="_blank"
+          rel="noopener"
+          class="group flex items-center gap-4 p-4 rounded-2xl border border-l-4 transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card hover:bg-white border-black/10 border-l-emerald-700 hover:border-emerald-700 dark:bg-matte-card dark:hover:bg-matte-hover dark:border-white/10 dark:border-l-emerald-400 dark:hover:border-emerald-400"
+        >
+          <div class="text-emerald-700 dark:text-emerald-400 shrink-0">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <span
+              class="font-semibold text-[15px]"
+              data-pt="Saas LM — App RAG com IA"
+              data-en="Saas LM — AI RAG App"
+            >
+              Saas LM — App RAG com IA
+            </span>
+            <span
+              class="text-xs text-paper-sub dark:text-[#9aa0a6]"
+              data-pt="Projeto em destaque • Streamlit & Groq"
+              data-en="Featured project • Streamlit & Groq"
+            >
+              Projeto em destaque • Streamlit & Groq
+            </span>
+          </div>
+          <i
+            data-lucide="arrow-up-right"
+            class="w-4 h-4 text-paper-sub dark:text-[#9aa0a6] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-paper-text dark:group-hover:text-white"
+          ></i>
+        </a>
+
+        <!-- GitHub (Preto) -->
+        <a
+          href="https://github.com/joaoksaas"
+          target="_blank"
+          rel="noopener"
+          class="group flex items-center gap-4 p-4 rounded-2xl border border-l-4 transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card hover:bg-white border-black/10 border-l-neutral-900 hover:border-neutral-900 dark:bg-matte-card dark:hover:bg-matte-hover dark:border-white/10 dark:border-l-neutral-100 dark:hover:border-neutral-100"
+        >
+          <div class="text-neutral-900 dark:text-neutral-100 shrink-0">
+            <svg
+              viewBox="0 0 24 24"
+              class="w-5 h-5 fill-current"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <span class="font-semibold text-[15px]">GitHub</span>
+            <span
+              class="text-xs text-paper-sub dark:text-[#9aa0a6]"
+              data-pt="Repositórios, Python, SQL e Projetos"
+              data-en="Repositories, Python, SQL & Projects"
+            >
+              Repositórios, Python, SQL e Projetos
+            </span>
+          </div>
+          <i
+            data-lucide="arrow-up-right"
+            class="w-4 h-4 text-paper-sub dark:text-[#9aa0a6] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-paper-text dark:group-hover:text-white"
+          ></i>
+        </a>
+
+        <!-- LinkedIn (Azul) -->
+        <a
+          href="https://www.linkedin.com/in/joaoksales/"
+          target="_blank"
+          rel="noopener"
+          class="group flex items-center gap-4 p-4 rounded-2xl border border-l-4 transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card hover:bg-white border-black/10 border-l-[#0A66C2] hover:border-[#0A66C2] dark:bg-matte-card dark:hover:bg-matte-hover dark:border-white/10 dark:border-l-[#4DA3FF] dark:hover:border-[#4DA3FF]"
+        >
+          <div class="text-[#0A66C2] dark:text-[#4DA3FF] shrink-0">
+            <svg
+              viewBox="0 0 24 24"
+              class="w-5 h-5 fill-current"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <span class="font-semibold text-[15px]">LinkedIn</span>
+            <span
+              class="text-xs text-paper-sub dark:text-[#9aa0a6]"
+              data-pt="Trajetória profissional e conexões"
+              data-en="Professional journey & network"
+            >
+              Trajetória profissional e conexões
+            </span>
+          </div>
+          <i
+            data-lucide="arrow-up-right"
+            class="w-4 h-4 text-paper-sub dark:text-[#9aa0a6] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-paper-text dark:group-hover:text-white"
+          ></i>
+        </a>
+
+        <!-- Currículo (Verde) -->
+        <!-- <a href="#" target="_blank" rel="noopener"
+        class="group flex items-center gap-4 p-4 rounded-2xl border border-l-4 transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card hover:bg-white border-black/10 border-l-emerald-700 hover:border-emerald-700 dark:bg-matte-card dark:hover:bg-matte-hover dark:border-white/10 dark:border-l-emerald-400 dark:hover:border-emerald-400">
+        <div class="text-emerald-700 dark:text-emerald-400 shrink-0">
+          <i data-lucide="file-text" class="w-5 h-5"></i>
+        </div>
+        <div class="flex flex-col flex-grow">
+          <span class="font-semibold text-[15px]" data-pt="Currículo (PDF)" data-en="Resume / CV (PDF)">
+            Currículo (PDF)
+          </span>
+          <span class="text-xs text-paper-sub dark:text-[#9aa0a6]" data-pt="Visualizar ou baixar versão atualizada" data-en="View or download updated version">
+            Visualizar ou baixar versão atualizada
+          </span>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-4 h-4 text-paper-sub dark:text-[#9aa0a6] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-paper-text dark:group-hover:text-white"></i>
+      </a> -->
+
+        <!-- Letterboxd (Azul) -->
+        <!-- <a href="https://letterboxd.com/" target="_blank" rel="noopener"
+        class="group flex items-center gap-4 p-4 rounded-2xl border border-l-4 transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card hover:bg-white border-black/10 border-l-sky-700 hover:border-sky-700 dark:bg-matte-card dark:hover:bg-matte-hover dark:border-white/10 dark:border-l-sky-400 dark:hover:border-sky-400">
+        <div class="text-sky-700 dark:text-sky-400 shrink-0">
+          <i data-lucide="film" class="w-5 h-5"></i>
+        </div>
+        <div class="flex flex-col flex-grow">
+          <span class="font-semibold text-[15px]">Letterboxd</span>
+          <span class="text-xs text-paper-sub dark:text-[#9aa0a6]" data-pt="Críticas e análises de cinema" data-en="Film reviews & cinema essays">
+            Críticas e análises de cinema
+          </span>
+        </div>
+        <i data-lucide="arrow-up-right" class="w-4 h-4 text-paper-sub dark:text-[#9aa0a6] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-paper-text dark:group-hover:text-white"></i>
+      </a> -->
+
+        <!-- Copiar E-mail (Amarelo) -->
+        <button
+          id="copy-email"
+          data-email="joaoksales.contato@gmail.com"
+          class="group w-full text-left flex items-center gap-4 p-4 rounded-2xl border border-l-4 transition-all duration-200 shadow-sm hover:-translate-y-0.5 bg-paper-card hover:bg-white border-black/10 border-l-amber-700 hover:border-amber-700 dark:bg-matte-card dark:hover:bg-matte-hover dark:border-white/10 dark:border-l-amber-400 dark:hover:border-amber-400"
+        >
+          <div class="text-amber-700 dark:text-amber-400 shrink-0">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div class="flex flex-col flex-grow">
+            <span
+              class="font-semibold text-[15px]"
+              id="email-title"
+              data-pt="Copiar E-mail"
+              data-en="Copy Email"
+            >
+              Copiar E-mail
+            </span>
+            <span class="text-xs text-paper-sub dark:text-[#9aa0a6]"
+              >joaoksales.contato@gmail.com</span
+            >
+          </div>
+          <i
+            data-lucide="copy"
+            class="w-4 h-4 text-paper-sub dark:text-[#9aa0a6] group-hover:text-paper-text dark:group-hover:text-white"
+          ></i>
+        </button>
+      </main>
+
+      <!-- Rodapé -->
+      <footer
+        class="text-center text-xs text-paper-sub dark:text-[#9aa0a6] mt-2"
+      >
+        <p
+          data-pt="Feito com HTML, Tailwind CSS & JS • Ponta Grossa, PR"
+          data-en="Built with HTML, Tailwind CSS & JS • Ponta Grossa, Brazil"
+        >
+          Feito com HTML, Tailwind CSS & JS • Ponta Grossa, PR
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
